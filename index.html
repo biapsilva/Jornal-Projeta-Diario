@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profeta Diário - Cards</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .card-img-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .carousel-inner {
+            padding: 30px 0;
+        }
+        .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+        }
+    
+        @media screen and (max-width: 768px) {
+        .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+        }
+    
+        @media screen and (max-width: 480px) {
+        .grid-container {
+        grid-template-columns: 1fr;
+            }
+        }
+    
+        .grid-item {
+        background-color: #ddd;
+        padding: 20px;
+        text-align: center;
+        } 
+    </style>
+</head>
+<body>
+    <h1>Profeta Diário</h1>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./images/profetadiario.webp" />
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./images/becodiagonal.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Beco Diagonal</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./images/materialescolar.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Material Escolar</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-4">
+                <article class="card">
+                    <header class="card-header">
+                        <h2>Reportagens sobre Hogwarts</h2>
+                    </header>
+                    <img src="./images/hogwarts.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Dentro das Paredes Encantadas: Descubra os Encantos de Hogwarts</h4>
+                        <p class="card-text">
+                            Explorando os Mistérios e Maravilhas da Escola de Magia mais Famosa do Mundo Mágico.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>27/05/2023 às 16:09</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img src="./images/boatosEfofocas.jpeg" />
+                    <div class="card-img-overlay">
+                        <h2 class="card-title">Fofocas e Boatos</h2>
+                        <h5 class="card-subtitle">Plumas e Venenos: As Fofocas Mais Explosivas e Escandalosas da Pluma de Rita Skeeter</h5>
+                        <p class="card-text">
+                            A jornalista mais temida está de volta e pronta para agitar o caldeirão com suas fofocas explosivas!
+                        </p>
+                        <p>
+                            A renomada e infame jornalista Rita Skeeter voltou à ação, trazendo consigo uma enxurrada de fofocas e boatos que estão causando tumulto no mundo mágico. Conhecida por suas reportagens polêmicas e revelações bombásticas, Skeeter rapidamente se tornou uma figura temida e intrigante.
+                        </p>
+                        <p>
+                            Portanto, prepare sua varinha e segure-se, pois adentraremos o universo cheio de plumas e venenos da incrível Rita Skeeter. Fique atento às próximas edições do Profeta Diário, pois traremos mais revelações e intrigas que certamente agitarão as fundações da sociedade bruxa.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>27/05/2023 às 16:18</time>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h2>Entrevista exclusiva!!</h2>
+                    </div>
+                    <img src="./images/elfodomestico.jpg" />
+                    <div class="card-body">
+                        <h3 class="card-title">Uma Entrevista Reveladora com um Elfo Doméstico!</h3>
+                        <h5 class="card-subtitle">Descubra os Segredos e Desafios da Vida de um Elfo Doméstico neste Relato Exclusivo</h5>
+                        <p class="card-text">
+                            Em uma busca por histórias fascinantes que raramente são contadas, tivemos a honra de conduzir uma entrevista reveladora com um elfo doméstico, uma das figuras mais subestimadas e misteriosas do mundo mágico. Adentrar no mundo oculto desses pequenos seres trouxe à tona uma realidade marcada por trabalho árduo, lealdade inabalável e aspirações por liberdade.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>27/05/2023 às 16:19</time>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
